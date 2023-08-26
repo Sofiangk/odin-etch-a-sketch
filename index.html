@@ -4,16 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Etch-a-Sketch</title>
   </head>
   <body>
-    <div id="container"></div>
-    <div id="options">
-      <input type="number" min="8" max="32" />
-      <input type="button" value="Submit" onclick="makeGrid()" />
+    <div class="flex-container">
+      <div class="title"><h1>Etch-a-Sketch</h1></div>
+      <div class="content">
+        <div class="board"></div>
+        <div class="options">
+          <button onclick="changeColor('black')">Black</button>
+          <button onclick="changeColor('white')">Eraser</button>
+          <button onclick="changeColor('random')">Random</button>
+          <button onclick="resetBoard()">Reset</button>
+        </div>
+        <div>
+          <input
+            type="number"
+            placeholder="Size of Board"
+            value="16"
+            onchange="changeSize(this.value)"
+          />
+          <button>Set Size</button>
+        </div>
+      </div>
     </div>
-    <!-- SCRIPT -->
     <script src="index.js"></script>
   </body>
 </html>
