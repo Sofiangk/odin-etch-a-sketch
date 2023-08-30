@@ -1,4 +1,17 @@
-.board {
+.grid {
   height: 500px;
   width: 500px;
+  padding: 0;
+  margin: 0;
+}
+
+.grid div {
+  padding: 0;
+  margin: 0;
+  border: 0.1px solid rgb(200, 200, 200);
+  border-collapse: collapse;
+}
+
+#alert {
+  color: red;
 }
