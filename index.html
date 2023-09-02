@@ -9,25 +9,35 @@
     <title>Etch-a-Sketch</title>
   </head>
   <body>
-    <h1>Etch-a-Sketch</h1>
-    <div class="grid"></div>
-    <div class="options">
-      <button onclick="changeColor('black')">Black</button>
-      <button onclick="changeColor('white')">Eraser</button>
-      <button onclick="changeColor('rainbow')">Rainbow</button>
-      <button onclick="resetGrid()">Reset</button>
+    <div class="container">
+      <h1>Etch-a-Sketch</h1>
+      <div class="mode">Coloring</div>
+      <div class="grid"></div>
+      <div class="options">
+        <button onclick="changeColor('black')">Black</button>
+        <button onclick="changeColor('white')">Eraser</button>
+        <button onclick="changeColor('rainbow')">Rainbow</button>
+        <button onclick="resetGrid()">Reset</button>
+      </div>
+      <div>
+        <label for="size"><span id="size">16</span></label>
+        <input
+          type="range"
+          min="2"
+          max="100"
+          id="size"
+          name="size"
+          value="16"
+          step="1"
+          onchange="changeSize(this.value)"
+        />
+        <p id="alert"></p>
+      </div>
     </div>
-    <div>
-      <input
-        type="number"
-        id="size"
-        value="16"
-        min="2"
-        max="100"
-        placeholder="Enter size"
-        onchange="changeSize(this.value)"
-      />
-      <p id="alert"></p>
+    <div class="credits">
+      Made by
+      <a href="https://github.com/sofiangk" target="_blank">Sofiangk</a> for
+      <a href="https://theodinproject.com/" target="_blank">The Odin Project</a>
     </div>
     <script src="index.js"></script>
   </body>

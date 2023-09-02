@@ -1,17 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+body {
+  background-color: #cc2020;
+  font-family: "Press Start 2P", cursive;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
 .grid {
   height: 500px;
   width: 500px;
-  padding: 0;
+  padding: 1.5rem;
   margin: 0;
 }
 
 .grid div {
   padding: 0;
   margin: 0;
-  border: 0.1px solid rgb(200, 200, 200);
   border-collapse: collapse;
 }
 
 #alert {
-  color: red;
+  color: #9d0505;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: whitesmoke;
+  color: #2c2c2c;
+  border-style: none;
+  border: 1px solid black;
+  font-family: Verdana, sans-serif;
+  font-size: 0.85rem;
+  background-color: white;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-bottom: 2rem;
+}
+
+#size,
+.mode {
+  color: white;
+}
+
+.credits {
+  color: white;
+  font-size: 0.7rem;
+  font-family: Verdana, sans-serif;
+  text-align: center;
+  place-items: 3, 2;
+}
+
+a {
+  font-family: "Press Start 2P", cursive;
+  padding: 0.25rem;
+  margin-bottom: -5rem;
+  font-style: unset;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
